@@ -2,7 +2,17 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/seo', '@nuxt/ui', '@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxtjs/seo',
+    '@nuxt/ui',
+    '@nuxtjs/tailwindcss',
+    '@vueuse/nuxt'
+  ],
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    classSuffix: '',
+  },
   tailwindcss: {
     config: {
       theme: {
